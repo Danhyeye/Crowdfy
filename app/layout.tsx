@@ -40,7 +40,7 @@ export default function RootLayout({
       >
         <QueryProvider>
           <Header />
-          <main className="pt-20 sm:pt-12 md:pt-14">
+          <main className="pt-22 sm:pt-16 md:pt-14">
             {children}
           </main>
         </QueryProvider>

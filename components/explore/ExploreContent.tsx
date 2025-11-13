@@ -58,7 +58,7 @@ export function ExploreContent() {
   };
 
   return (
-    <div className="container h-14 md:h-16 w-full mx-auto px-4 py-3 md:px-6 md:py-4 lg:px-9 lg:py-4">
+    <div className="container w-full mx-auto px-4 py-3 md:px-6 md:py-4 lg:px-9 lg:py-4">
       <ExploreHeader
         sortBy={sortBy}
         sortOrder={sortOrder}
