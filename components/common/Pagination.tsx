@@ -78,7 +78,7 @@ export function Pagination({ currentPage, totalPages, onPageChange }: Pagination
   };
 
   return (
-    <PaginationRoot className="py-4 my-2 sm:my-8 sm:py-4 md:py-4 border-t border-muted sm:border-t sm:border-muted md:border-t md:border-muted">
+    <PaginationRoot className="py-4 my-2 sm:my-8 sm:py-4 md:py-4 border-t border-muted sm:border-t sm:border-muted md:border-t md:border-muted bg-background">
       <PaginationContent className="justify-between w-full">
         <PaginationItem>
           <PaginationPrevious

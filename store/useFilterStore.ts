@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { CampaignFilters, SortBy, SortOrder } from '@/lib/api/fetchCampaigns';
 import { CampaignType } from '@/types/campaigns';
 
-export type ViewMode = 'gallery' | 'list';
+export type ViewMode = 'gallery' | 'maps';
 
 interface FilterState extends CampaignFilters {
   searchQuery: string;
@@ -20,7 +20,7 @@ interface FilterState extends CampaignFilters {
   setPage: (page: number) => void;
 }
 
-const initialState: CampaignFilters & { searchQuery: string; favorites: string[]; viewMode: 'gallery' | 'list' } = {
+const initialState: CampaignFilters & { searchQuery: string; favorites: string[]; viewMode: 'gallery' | 'maps' } = {
   page: 1,
   pageSize: 9,
   sortBy: undefined,
@@ -56,6 +56,10 @@ export const useFilterStore = create<FilterState>((set) => ({
   setType: (type) => set({ type, page: 1 }),
   
   setSearchQuery: (query) => set({ searchQuery: query, page: 1 }),
+
+  setLatitude: (latitude: number) => set({ latitude, page: 1 }),
+  
+  setLongitude: (longitude: number) => set({ longitude, page: 1 }),
   
   toggleFavorite: (campaignId) => set((state) => {
     const favorites = state.favorites.includes(campaignId)

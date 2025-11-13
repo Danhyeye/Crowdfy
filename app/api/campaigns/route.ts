@@ -13,6 +13,8 @@ export async function GET(request: NextRequest) {
     const sortBy = searchParams.get('sortBy'); // 'price' or 'date'
     const sortOrder = searchParams.get('sortOrder') || 'asc'; // 'asc' or 'desc'
     const type = searchParams.get('type') as 'donation' | 'petition' | null;
+    const latitude = searchParams.get('latitude') ? parseFloat(searchParams.get('latitude')!) : null;
+    const longitude = searchParams.get('longitude') ? parseFloat(searchParams.get('longitude')!) : null;
     const search = searchParams.get('search') || '';
 
     const filePath = join(process.cwd(), 'data', 'campaigns.data.json');
@@ -34,6 +36,13 @@ export async function GET(request: NextRequest) {
     // Apply type filter
     if (type) {
       filteredCampaigns = filteredCampaigns.filter((campaign) => campaign.type === type);
+    }
+
+    // Apply location filter
+    if (latitude !== null && longitude !== null) {
+      filteredCampaigns = filteredCampaigns.filter((campaign) => {
+        return Math.abs(campaign.latitude! - latitude) <= 1 && Math.abs(campaign.longitude! - longitude) <= 1;
+      });
     }
 
     // Apply price filter

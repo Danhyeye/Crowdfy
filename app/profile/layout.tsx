@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Profile",
+  title: "Crowdfy - Profile",
   description: "View and manage your profile",
   icons: {
     icon: "/images/logo.svg",

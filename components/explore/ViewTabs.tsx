@@ -1,10 +1,9 @@
 "use client";
 
-import { PiggyBank, LayoutGrid, List as ListIcon, FilePenLine } from "lucide-react";
+import { PiggyBank, LayoutGrid, FilePenLine, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { ViewMode } from "@/store/useFilterStore";
-
 interface ViewTabsProps {
   activeTab: "all" | "petitions" | "donations";
   viewMode: ViewMode;
@@ -20,7 +19,7 @@ const tabs = [
 
 const viewModes = [
   { id: "gallery" as const, icon: LayoutGrid, label: "Gallery view" },
-  { id: "list" as const, icon: ListIcon, label: "List view" },
+  { id: "maps" as const, icon: MapPin, label: "Maps view" },
 ] as const;
 
 export function ViewTabs({
@@ -74,7 +73,7 @@ export function ViewTabs({
               key={id}
               variant="ghost"
               size="icon"
-              onClick={() => onViewModeChange(id)}
+              onClick={() => onViewModeChange(id as ViewMode)}
               className={`
                 h-9 w-9 transition-all duration-200
                 ${isActive 

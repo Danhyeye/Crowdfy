@@ -17,6 +17,8 @@
         },
         "percentage": 50,
         "location": "Saint Martin",
+        "latitude": 18.0708,
+        "longitude": -63.0501,
         "createdAt": "2024-09-15T10:30:00Z"
       },
       {
@@ -36,6 +38,8 @@
         },
         "percentage": 50,
         "location": "Spain",
+        "latitude": 40.4168,
+        "longitude": -3.7038,
         "createdAt": "2024-08-22T14:20:00Z"
       },
       {
@@ -55,6 +59,8 @@
         },
         "percentage": 75,
         "location": "France",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
         "createdAt": "2024-09-18T09:15:00Z"
       },
       {
@@ -75,6 +81,8 @@
         "percentage": 75,
         "supporters": 4141,
         "location": "Brazil",
+        "latitude": -23.5505,
+        "longitude": -46.6333,
         "createdAt": "2024-07-10T16:45:00Z"
       },
       {
@@ -95,6 +103,8 @@
         "percentage": 75,
         "supporters": 3250,
         "location": "USA",
+        "latitude": 40.7128,
+        "longitude": -74.0060,
         "createdAt": "2024-06-05T11:30:00Z"
       },
       {
@@ -114,6 +124,8 @@
         },
         "percentage": 75,
         "location": "Ukraine",
+        "latitude": 50.4501,
+        "longitude": 30.5234,
         "createdAt": "2024-10-01T08:00:00Z"
       },
       {
@@ -133,6 +145,8 @@
         },
         "percentage": 75,
         "location": "Portugal",
+        "latitude": 38.7223,
+        "longitude": -9.1393,
         "createdAt": "2024-05-20T13:20:00Z"
       },
       {
@@ -152,6 +166,8 @@
         },
         "percentage": 75,
         "location": "Portugal",
+        "latitude": 38.7223,
+        "longitude": -9.1393,
         "createdAt": "2024-08-12T15:40:00Z"
       },
       {
@@ -171,6 +187,8 @@
         },
         "percentage": 75,
         "location": "Netherlands",
+        "latitude": 52.3676,
+        "longitude": 4.9041,
         "createdAt": "2024-09-28T12:10:00Z"
       },
       {
@@ -190,6 +208,8 @@
         },
         "percentage": 75,
         "location": "Canada",
+        "latitude": 43.6532,
+        "longitude": -79.3832,
         "createdAt": "2024-07-30T10:25:00Z"
       }
     ],

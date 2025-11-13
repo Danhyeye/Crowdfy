@@ -90,9 +90,9 @@ export function CampaignListItem({
           </div>
           <div className="hidden md:block absolute top-4 right-4 lg:top-5 lg:right-5">
             <Button
-              variant="secondary"
+              variant="outline"
               size="icon"
-              className={`h-9 w-9 lg:h-12 lg:w-12 rounded-lg shadow-md transition-all ${
+              className={`h-9 w-9 lg:h-12 lg:w-12 rounded-lg shadow-md transition-all hover:bg-background/95 backdrop-blur-none supports-backdrop-filter:bg-background/60 ${
                 isFavorite ? "text-red-500" : "text-foreground"
               }`}
               onClick={(e) => onFavoriteClick(campaign.id, e)}

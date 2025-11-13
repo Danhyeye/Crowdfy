@@ -86,3 +86,53 @@ body {
     color: hsl(var(--foreground));
   }
 }
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  /* Firefox */
+  .scrollbar-hidden {
+    scrollbar-width: none;
+  }
+  /* IE and Edge */
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+  }
+}
+
+/* Override Google Maps InfoWindow height constraints and padding */
+.gm-style .gm-style-iw-d {
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+}
+
+.gm-style .gm-style-iw-c {
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+}
+
+.gm-style .gm-style-iw-d > div {
+  padding: 0 !important;
+  padding-top: 0 !important;
+}
+
+.gm-style .gm-style-iw-d > div > div {
+  padding: 0 !important;
+  padding-top: 0 !important;
+}
+
+.info-window-content {
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  display: block !important;
+}

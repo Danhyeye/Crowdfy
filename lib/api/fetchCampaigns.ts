@@ -14,6 +14,8 @@ export interface CampaignFilters {
   sortOrder?: SortOrder;
   type?: CampaignType;
   search?: string;
+  latitude?: number;
+  longitude?: number;
 }
 
 const convertCampaignFilters = (filters?: CampaignFilters): RequestParams => {
@@ -28,6 +30,8 @@ const convertCampaignFilters = (filters?: CampaignFilters): RequestParams => {
     if (filters?.sortOrder) params.sortOrder = filters.sortOrder;
     if (filters?.type) params.type = filters.type;
     if (filters?.search) params.search = filters.search;
+    if (filters?.latitude) params.latitude = filters.latitude;
+    if (filters?.longitude) params.longitude = filters.longitude;
     return params;
 }
 

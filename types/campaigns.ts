@@ -18,6 +18,8 @@ export interface Campaign {
   };
   percentage: number;
   location?: string;
+  latitude?: number;
+  longitude?: number;
   supporters?: number; // for petitions (signatures)
   createdAt: string; // ISO date string
 }
