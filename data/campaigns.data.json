@@ -1,0 +1,199 @@
+{
+    "campaigns": [
+      {
+        "id": "1",
+        "type": "donation",
+        "title": "Ms. Saint-Martin Doranyia Pascal",
+        "description": "Hi This is your Miss Teen Carnival 2022 Doranyia Pascal I will be representing Saint Martin...",
+        "creator": {
+          "name": "Olivia Rhye",
+          "avatar": "https://i.pravatar.cc/150?img=1",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=400",
+        "amount": {
+          "raised": 8514.95,
+          "currency": "€"
+        },
+        "percentage": 50,
+        "location": "Saint Martin",
+        "createdAt": "2024-09-15T10:30:00Z"
+      },
+      {
+        "id": "2",
+        "type": "donation",
+        "title": "Educación en Academia de...",
+        "description": "Hola, mi nombre es Xiaomi Torres soy la madre de Joseph Y. Christian Torres. Ambos...",
+        "creator": {
+          "name": "Olivia Rhye",
+          "avatar": "https://i.pravatar.cc/150?img=1",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400",
+        "amount": {
+          "raised": 9977.32,
+          "currency": "€"
+        },
+        "percentage": 50,
+        "location": "Spain",
+        "createdAt": "2024-08-22T14:20:00Z"
+      },
+      {
+        "id": "3",
+        "type": "donation",
+        "title": "Aidez la famille Mimba....",
+        "description": "À la mi-septembre, les enfants MIMBA ont été profondément affectés par la...",
+        "creator": {
+          "name": "Olivia Rhye",
+          "avatar": "https://i.pravatar.cc/150?img=1",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400",
+        "amount": {
+          "raised": 8129.86,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "location": "France",
+        "createdAt": "2024-09-18T09:15:00Z"
+      },
+      {
+        "id": "4",
+        "type": "petition",
+        "title": "Huni Kuin Sacred Support",
+        "description": "I tend not to speak too much about this work, perhaps it is to be experienced and not to be explained.",
+        "creator": {
+          "name": "Olivia Rhye",
+          "avatar": "https://i.pravatar.cc/150?img=1",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400",
+        "amount": {
+          "raised": 5411.79,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "supporters": 4141,
+        "location": "Brazil",
+        "createdAt": "2024-07-10T16:45:00Z"
+      },
+      {
+        "id": "5",
+        "type": "petition",
+        "title": "LET'S MAKE THE DIY...",
+        "description": "I'm David Perez aka Chino, who started skating this spot some years ago with my...",
+        "creator": {
+          "name": "Jaylon Aminoff",
+          "avatar": "https://i.pravatar.cc/150?img=8",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1547153760-18fc86324498?w=400",
+        "amount": {
+          "raised": 7490.26,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "supporters": 3250,
+        "location": "USA",
+        "createdAt": "2024-06-05T11:30:00Z"
+      },
+      {
+        "id": "6",
+        "type": "donation",
+        "title": "Solar project of Bobryk...",
+        "description": "In March 2022 the secondary school of Bobrytsky Lyceum of Kyiv Region...",
+        "creator": {
+          "name": "Davis Press",
+          "avatar": "https://i.pravatar.cc/150?img=12",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=400",
+        "amount": {
+          "raised": 3427.64,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "location": "Ukraine",
+        "createdAt": "2024-10-01T08:00:00Z"
+      },
+      {
+        "id": "7",
+        "type": "donation",
+        "title": "Our animals need...",
+        "description": "For the last 6 years we are saving and collecting animals from different farms...",
+        "creator": {
+          "name": "Omar Franci",
+          "avatar": "https://i.pravatar.cc/150?img=33",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=400",
+        "amount": {
+          "raised": 6691.26,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "location": "Portugal",
+        "createdAt": "2024-05-20T13:20:00Z"
+      },
+      {
+        "id": "8",
+        "type": "donation",
+        "title": "Mini-Oven for pick-a-pão",
+        "description": "I would like nothing more than to continue baking bread for you, to be able to...",
+        "creator": {
+          "name": "Jakob Septimus",
+          "avatar": "https://i.pravatar.cc/150?img=14",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=400",
+        "amount": {
+          "raised": 9184.17,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "location": "Portugal",
+        "createdAt": "2024-08-12T15:40:00Z"
+      },
+      {
+        "id": "9",
+        "type": "donation",
+        "title": "Streetart stamping for...",
+        "description": "In the spirit of generosity and compassion, a charitable organization tirelessly...",
+        "creator": {
+          "name": "Adison Gouse",
+          "avatar": "https://i.pravatar.cc/150?img=27",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=400",
+        "amount": {
+          "raised": 3182.49,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "location": "Netherlands",
+        "createdAt": "2024-09-28T12:10:00Z"
+      },
+      {
+        "id": "10",
+        "type": "donation",
+        "title": "Embracing Humanity...",
+        "description": "Charitable endeavors blossom like flowers of goodwill, as individuals and communities...",
+        "creator": {
+          "name": "Emery Dias",
+          "avatar": "https://i.pravatar.cc/150?img=41",
+          "verified": true
+        },
+        "image": "https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=400",
+        "amount": {
+          "raised": 8207.41,
+          "currency": "€"
+        },
+        "percentage": 75,
+        "location": "Canada",
+        "createdAt": "2024-07-30T10:25:00Z"
+      }
+    ],
+    "total": 10,
+    "page": 1,
+    "pageSize": 9
+  }
