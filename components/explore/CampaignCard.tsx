@@ -52,7 +52,7 @@ export function CampaignCard({ campaign, isFavorite, onFavoriteClick }: Campaign
         <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 line-clamp-2">{campaign.description}</p>
 
         <div className="space-y-2 sm:space-y-3">
-          <Progress value={campaign.percentage} className="h-1.5 sm:h-2" />
+          <Progress value={campaign.percentage} className="h-1 sm:h-1" />
 
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base md:text-lg">

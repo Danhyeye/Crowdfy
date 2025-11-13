@@ -86,7 +86,7 @@ export function CampaignListItem({
                   </span>
               </div>
             </div>
-              <Progress value={campaign.percentage} className="h-1.5 sm:h-2" />
+              <Progress value={campaign.percentage} className="h-1 sm:h-1" />
           </div>
           <div className="hidden md:block absolute top-4 right-4 lg:top-5 lg:right-5">
             <Button
