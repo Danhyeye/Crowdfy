@@ -100,11 +100,12 @@ export function Header() {
             </Button>
           </div>
         </div>
-      </header>
-
-      {pathname === "/explore" && (
+        {pathname === "/explore" && (
         <Subnav />
       )}
+      </header>
+
+     
     </>
   );
 }

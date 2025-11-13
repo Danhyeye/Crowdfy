@@ -23,6 +23,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Crowdfy",
   description: "Crowdfy is a platform for creating and sharing campaigns and petitions",
+  icons: {
+    icon: "/images/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -37,7 +40,7 @@ export default function RootLayout({
       >
         <QueryProvider>
           <Header />
-          <main className="pt-14 md:pt-16">
+          <main className="pt-20 sm:pt-12 md:pt-14">
             {children}
           </main>
         </QueryProvider>
