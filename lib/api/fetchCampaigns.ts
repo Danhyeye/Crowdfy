@@ -1,22 +1,7 @@
 import apiService, { RequestParams } from '@/lib/core';
-import { CampaignsResponse, CampaignType } from '@/types/campaigns';
+import { CampaignsResponse, CampaignFilters } from '@/types/campaigns';
 
-export type SortBy = 'price' | 'date';
 
-export type SortOrder = 'asc' | 'desc';
-
-export interface CampaignFilters {
-  page?: number;
-  pageSize?: number;
-  minPrice?: number;
-  maxPrice?: number;
-  sortBy?: SortBy;
-  sortOrder?: SortOrder;
-  type?: CampaignType;
-  search?: string;
-  latitude?: number;
-  longitude?: number;
-}
 
 const convertCampaignFilters = (filters?: CampaignFilters): RequestParams => {
   if (!filters) return {};
@@ -40,23 +25,6 @@ export const campaignsService = {
     const params = convertCampaignFilters(filters);
     const response = await apiService.get<CampaignsResponse>('/campaigns', params);
     return response.data;
-  },
-  
-  toggleFavorite: async (campaignId: string, isFavorite: boolean): Promise<void> => {
-    if (isFavorite) {
-      await apiService.delete(`/campaigns/${campaignId}/favorite`);
-    } else {
-      await apiService.post(`/campaigns/${campaignId}/favorite`);
-    }
-  },
-
-  deleteFavorite: async (campaignId: string): Promise<void> => {
-    await apiService.delete(`/campaigns/${campaignId}/favorite`);
-  },
-  
-  getFavorites: async (): Promise<string[]> => {
-    const response = await apiService.get<{ favorites: string[] }>('/campaigns/favorites');
-    return response.data.favorites;
   },
 };
 

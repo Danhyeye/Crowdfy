@@ -26,14 +26,14 @@ export function CampaignListItem({
   onFavoriteClick,
 }: CampaignListItemProps) {
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
-      <div className="flex flex-col md:flex-row md:gap-4">
-        <div className="relative w-full md:w-52 md:h-52 lg:w-56 lg:h-56 h-48 sm:h-56 shrink-0">
+    <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 rounded-2xl">
+      <div className="flex gap-2 sm:gap-3 md:gap-4">
+        <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-56 lg:h-56 shrink-0">
           <Image
             src={campaign.image}
             alt={campaign.title}
             fill
-            sizes="(max-width: 768px) 100vw, 224px"
+            sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, 224px"
             loading="eager"
             className="object-cover rounded-2xl p-2"
           />
@@ -65,7 +65,7 @@ export function CampaignListItem({
                 {campaign.title}
               </h3>
 
-              <p className="text-xs sm:text-sm md:text-sm lg:text-base text-gray-600 line-clamp-2 sm:line-clamp-3 leading-relaxed">
+              <p className="text-xs sm:text-sm md:text-sm lg:text-base text-gray-600 line-clamp-2 sm:line-clamp-2 leading-relaxed">
                 {campaign.description}
               </p>
             </div>

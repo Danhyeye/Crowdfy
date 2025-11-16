@@ -2,7 +2,7 @@
 
 import { ArrowUp, ArrowDown, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SortBy, SortOrder } from "@/lib/api/fetchCampaigns";
+import { SortBy, SortOrder } from "@/store/useFilterStore";
 
 interface FilterControlsProps {
   sortBy?: SortBy;
@@ -18,7 +18,7 @@ export function FilterControls({
   onFilterClick,
 }: FilterControlsProps) {
   return (
-    <div className="flex items-center gap-2 sm:gap-3 flex-wrap w-full sm:w-auto">
+    <div className="flex items-center gap-2 sm:gap-3">
       <Button
         variant="outline"
         size="sm"

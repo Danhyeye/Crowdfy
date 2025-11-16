@@ -29,7 +29,7 @@ export function ViewTabs({
   onViewModeChange,
 }: ViewTabsProps) {
   return (
-    <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+    <div className="flex sm:flex-row sm:items-center justify-between">
       <ButtonGroup className="bg-background w-full sm:w-auto rounded-lg border border-muted">
         {tabs.map(({ id, label, icon: Icon }) => {
           const isActive = activeTab === id;

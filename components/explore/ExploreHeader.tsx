@@ -1,7 +1,7 @@
 "use client";
 
 import { FilterControls } from "./FilterControls";
-import { SortBy, SortOrder } from "@/lib/api/fetchCampaigns";
+import { SortBy, SortOrder } from "@/store/useFilterStore";
 
 interface ExploreHeaderProps {
   sortBy?: SortBy;
@@ -22,7 +22,7 @@ export function ExploreHeader({
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2">
           Explore
         </h1>
-        <p className="text-base sm:text-sm text-gray-600">
+        <p className="text-sm sm:text-sm text-gray-600">
           Where do you want to help
         </p>
       </div>

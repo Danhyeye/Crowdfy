@@ -22,7 +22,7 @@ export function CampaignCard({ campaign, isFavorite, onFavoriteClick, size = "de
 
   return (
     <Card className={`overflow-hidden hover:shadow-lg transition-shadow rounded-lg ${isCompact ? "w-full" : ""}`}>
-      <div className={`relative ${isMap ? "aspect-[4/3]" : "aspect-video"} w-full`}>
+      <div className={`relative ${isMap ? "aspect-4/3" : "aspect-video"} w-full`}>
         <Image
           src={campaign.image}
           alt={campaign.title}
