@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Upload, Heart, Gift, MapPin } from "lucide-react";
+import { Upload, Heart, Gift, MapPin, Award } from "lucide-react";
 import Image from "next/image";
 import { Campaign } from "@/types/campaigns";
 import formatCurrency from "@/utils/number/price/formatCurrency";
@@ -28,7 +28,7 @@ export function CampaignListItem({
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 rounded-2xl">
       <div className="flex gap-2 sm:gap-3 md:gap-4">
-        <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-56 lg:h-56 shrink-0">
+        <CardContent className="relative w-40 h-52 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-56 lg:h-56 shrink-0">
           <Image
             src={campaign.image}
             alt={campaign.title}
@@ -37,8 +37,13 @@ export function CampaignListItem({
             loading="eager"
             className="object-cover rounded-2xl p-2"
           />
-         
-        </div>
+          {campaign.creator.verified && (
+            <div className="absolute bottom-4 left-4 bg-[#f7fee7] text-[#65a30e] px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+              <Award className="w-3 h-3" />
+              Verified
+            </div>
+          )}
+        </CardContent>
 
         <CardContent className="flex-1 p-3 sm:p-4 md:p-2 lg:p-2 relative flex flex-col">
             <div className="flex flex-col gap-2">
